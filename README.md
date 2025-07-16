@@ -2,104 +2,126 @@
 Simple webpage
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chocolate Delight - Home</title>
-    <style>
-        body {
-            background-color: rgb(228, 203, 169);
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Delight - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #e4cba9, #f2e5d7);
+      color: #4d2d2b;
+    }
 
-        .container {
-            background-color: rgb(77, 45, 43);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 700px;
-            border-radius: 10px;
-            margin: 0 auto;
-            margin-top: 6%;
-            padding: 20px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
+    header {
+      background-color: #4d2d2b;
+      color: #f7e7d4;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-        h1, h2 {
-            color: #f7e7d4;
-            text-align: center;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
 
-        p {
-            font-size: 1.2em;
-            margin: 10px 0;
-            text-align: center;
-        }
+    .container {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
 
-        .button {
-            background-color: #f7e7d4;
-            color: rgb(77, 45, 43);
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 15px;
-            text-decoration: none;
-        }
+    .hero {
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-        .button:hover {
-            background-color: #d6c3a7;
-        }
+    .hero p {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
 
-        .section {
-            margin: 20px 0;
-        }
+    .button {
+      background-color: #a0604a;
+      color: white;
+      padding: 12px 24px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
 
-        footer {
-            background-color: rgb(77, 45, 43);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-            border-top: 2px solid #f7e7d4;
-        }
+    .button:hover {
+      background-color: #7e4a37;
+    }
 
-        footer p {
-            margin: 5px 0;
-            font-size: 0.9em;
-        }
-    </style>
+    .section {
+      margin: 30px 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #4d2d2b;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: #4d2d2b;
+      color: #f7e7d4;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 4px 0;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Welcome to Chocolate Delight</h1>
-        <p>Your ultimate destination for mouth-watering chocolate treats and delights.</p>
-        <a href="#" class="button">Explore Our Chocolates</a>
+  <header>
+    <h1>Chocolate Delight</h1>
+  </header>
 
-        <div class="section">
-            <h2>About Us</h2>
-            <p>At Chocolate Delight, we believe in delivering the finest chocolate experience to our customers. Our
-                chocolates are crafted with love and passion, using the best ingredients to create flavors that melt in your mouth.</p>
-        </div>
+  <div class="container">
+    <div class="hero">
+      <p>Your ultimate destination for mouth-watering chocolate treats and delights.</p>
+      <a href="#" class="button">Explore Our Chocolates</a>
+    </div>
 
-        <div class="section">
-            <h2>Our Products</h2>
-            <p>We offer a wide range of chocolate delights, including truffles, pralines, chocolate bars, and much more. Whether you love dark, milk, or white chocolate, we have something to satisfy every craving.</p>
-            <a href="#" class="button">View Our Products</a>
-        </div>
-    </div>
+    <div class="section">
+      <h2>About Us</h2>
+      <p>At Chocolate Delight, we believe in delivering the finest chocolate experience. Our chocolates are handcrafted with love and premium ingredients, promising a taste that melts in your mouth.</p>
+    </div>
 
-    <footer>
-        <p>Thank you for visiting Chocolate Delight!</p> 
-        <p>&copy; 2024 Chocolate Delight. All rights reserved.</p>
-    </footer>
+    <div class="section">
+      <h2>Our Products</h2>
+      <p>From silky truffles to classic chocolate bars, we have something for every chocolate lover. Indulge in our selection of dark, milk, and white chocolates that delight every sense.</p>
+      <a href="#" class="button">View Our Products</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Thank you for visiting Chocolate Delight!</p>
+    <p>&copy; 2024 Chocolate Delight. All rights reserved.</p>
+  </footer>
 </body>
+</html>
+
 Add index.html with Choco-delight webpage 
